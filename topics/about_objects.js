@@ -3,13 +3,13 @@ module("About Objects (topics/about_objects.js)");
 
 test("object type", function() {
     var empty_object = {};
-    equal(__, typeof(empty_object), 'what is the type of an object?');
+    equal(literal, typeof(empty_object), 'what is the type of an object?');
 });
 
 test("object literal notation", function() {
     var person = {
-        __:__,
-        __:__
+        name:"Amory Blaine",
+        age:"102"
     };
     equal("Amory Blaine", person.name, "what is the person's name?");
     equal(102, person.age, "what is the person's age?");
@@ -21,7 +21,7 @@ test("dynamically adding properties", function() {
     person.__ = 102;
     equal("Amory Blaine", person.name, "what is the person's name?");
     equal(102, person.age, "what is the person's age?");
-}); 
+});
 
 test("adding properties from strings", function() {
     var person = {};
