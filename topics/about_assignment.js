@@ -8,5 +8,5 @@ test("local variables", function() {
 
 test("global variables", function() {
     temp = 1; // Not using var is an example. Always use var in practise.
-    equal(window.1, temp, 'global variables are assigned to the window object');
+    equal(1, temp, 'global variables are assigned to the window object');
 });

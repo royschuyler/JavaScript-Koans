@@ -15,7 +15,7 @@ test("concatenation", function() {
 
 test("character Type", function() {
     var characterType = typeof("Amory".charAt(1)); // typeof will be explained in about reflection
-    equal("m", var characterType = typeof("Amory".charAt(1));, 'Javascript has no character type');
+    equal("string", characterType, 'Javascript has no character type');
 });
 
 test("escape character", function() {
